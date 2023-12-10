@@ -1,0 +1,7 @@
+{
+  "name": "money morph",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

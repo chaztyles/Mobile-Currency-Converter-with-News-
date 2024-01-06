@@ -1,0 +1,53 @@
+.custom-list {
+  width: 92%;
+  margin: auto;
+  height: 180px; 
+}
+
+.custom-item {
+  height: 60px;
+  width: 100%;
+}
+
+.custom-input {
+  width: 90%; 
+  margin-top: 10px; 
+  height: 100%;
+}
+
+.icon{
+  font-size: 2em;
+}
+
+.button-style{
+  width: 92%;
+  height: 45px;
+}
+
+.custom-button {
+  color: #5e8557;
+}
+
+.custom-text{
+  color: white;
+}
+
+ion-list {
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+ion-input{
+  --highlight-color-focused:#589b5f;
+  --highlight-color-valid: #589b5f;
+}
+
+ion-title{
+  text-align: center;
+ }
+
+ion-card{
+  border-radius: 8px;
+}
+

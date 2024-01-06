@@ -1,17 +1,44 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
+<ion-header>
+  <ion-toolbar color="green">
+    <div class="toolbar-title">
+      <ion-title color="light">
+        {{title}}
     </ion-title>
+    </div>
   </ion-toolbar>
+  
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content class="Background">
+  <div class="Loading" *ngIf="newsData.length === 0; else newsList">
+    <ion-spinner></ion-spinner> <!-- or any loading message -->
+  </div>
+    <ng-template #newsList>
+          <ion-list >
+            <ion-card>
+              <ion-item *ngFor = "let article of newsData">
+              <img [src]="article.urlToImage" alt="Article Image">
+              <ion-card-header>
+                <ion-label>
+                  <ion-card-title>
+                    <h1 id="articleTitle">
+                        {{ article.title }}
+                    </h1>
+                  </ion-card-title>
+                  <ion-card-subtitle>
+                    <p id="date">
+                      {{article.publishedAt | date:'medium'}}
+                    </p>
+                  </ion-card-subtitle>
+                </ion-label>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-label padding="5px">
+                  <p id="desc">{{ article.description }} <a [href]="article.url" target="_blank">Read more</a></p>
+                </ion-label>
+              </ion-card-content>
+              </ion-item>
+            </ion-card>
+          </ion-list>
+    </ng-template>
 </ion-content>

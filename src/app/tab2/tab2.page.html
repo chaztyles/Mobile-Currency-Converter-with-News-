@@ -1,17 +1,71 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
+<ion-header>
+  <ion-toolbar color="green">
+    <ion-title color="light">
+      {{title}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <br>
+  <br>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-list [inset]="true" expand="full" class="ion-text-center custom-list" color="cashless">
+    <ion-item [button]="true" class="custom-item" routerLink="/changebase"  color="cashless">
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="" [src]="firstLogo" />
+      </ion-avatar>
+      <ion-label>
+        <h2 color="green">{{baseCurrency}}</h2>
+        <p>{{ baseCurrencyName}}</p>
+      </ion-label>
+      <ion-icon name="chevron-forward-outline" color="green"></ion-icon>
+    </ion-item>
+    <br>
+    <ion-item class="custom-item">
+      <ion-input type="number" fill="outline" label="&nbsp;From" placeholder="0000" [(ngModel)]="amount"></ion-input>
+    </ion-item>
+  </ion-list>
+  
+  <ion-grid class="ion-text-center">
+    <ion-row>
+      <ion-col>
+        <ion-icon name="reorder-two" class="icon" color="green"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list [inset]="true" expand="full" class="ion-text-center custom-list">
+    <ion-item [button]="true" class="custom-item" routerLink="/changetarget" color="cashless">
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="" [src]="secondLogo" />
+      </ion-avatar>
+      <ion-label>
+        <h2 color="green">{{targetCurrency}}</h2>
+        <p>{{targetCurrencyName}}</p>
+      </ion-label>
+      <ion-icon name="chevron-forward-outline" color="green"></ion-icon>
+    </ion-item>
+    <br>
+    <ion-item class="custom-item">
+      <ion-input type="text" fill="outline" [readonly]="true" label="&nbsp;To" [(ngModel)]="conversionResult"></ion-input>
+    </ion-item>
+  </ion-list>
+  <br>
+  <br>
+  <div class="ion-text-center">
+    <ion-button class="button-style" (click)="convert()" color="green"><span class="custom-text">{{btnConvert}}</span></ion-button>
+  </div>
+  <br>
+  <div class="ion-text-center">
+    <ion-button class="button-style" fill="outline" color="green" (click)="reverseCurrencies()">
+      <span class="custom-button">{{btnReverse}}</span>
+    </ion-button>
+  </div>
+
 </ion-content>
+
+
+  
+  
+

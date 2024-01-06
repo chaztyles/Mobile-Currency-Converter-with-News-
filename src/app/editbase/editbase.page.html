@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="green">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">{{title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="searchQuery" (ionChange)="applySearchFilter()" placeholder="Search currency" (ionClear)="onSearchBarClear()"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let currency of filteredCurrencies" (click)="onItemClick(currency.code)" (click)="presentToast()" color="cashless" button>
+      <ion-thumbnail slot="start">
+        <img [src]="getCurrencyLogo(currency.code)" alt="{{ currency.code }}">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ currency.name }}</h2>
+        <p>{{ currency.code }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>  
+</ion-content>
+
+
+

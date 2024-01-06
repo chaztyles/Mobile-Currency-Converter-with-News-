@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="green">
+    <ion-title color="light">
+      {{title}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <ion-list>
+  <ion-item-group>
+    <ion-item-divider color="cashless">
+      <ion-label class="ion-text-"> {{subtitle[0]}} </ion-label>
+    </ion-item-divider>
+    <ion-item routerLink="/terms"button>
+      <ion-icon name="document-text-outline" color="green"></ion-icon>
+      <ion-label class="label">&nbsp;{{terms}}</ion-label>
+      <ion-icon name="chevron-forward-outline" color="green"></ion-icon>
+    </ion-item>
+    <ion-item routerLink="/privacy" button>
+      <ion-icon name="newspaper-outline" color="green"></ion-icon>
+      <ion-label class="label">&nbsp;{{privacy}}</ion-label>
+      <ion-icon name="chevron-forward-outline" color="green"></ion-icon>
+    </ion-item>
+    <ion-item href="https://play.google.com/store/games?device=windows&utm_source=apac_med&hl=en-PH&utm_medium=hasem&utm_content=Jun1223&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-ph-1003227-med-hasem-py-Evergreen-Jun1223-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700076783011937_creativeid_662052580955_device_c&gclid=CjwKCAiA98WrBhAYEiwA2WvhOv6DPgl9CSeHZUhNzK2OA0LMuGUgJ60VPtl0sn6qOUo1rDkeBKXodxoC0TMQAvD_BwE&gclsrc=aw.ds" button>
+      <ion-icon name="star-outline" color="green"></ion-icon>
+      <ion-label class="label">&nbsp;{{rate}}</ion-label>
+      <ion-icon name="chevron-forward-outline" color="green"></ion-icon>
+    </ion-item>
+  </ion-item-group>
+  <ion-item-group>
+    <ion-item-divider color="cashless">
+      <ion-label> {{subtitle[1]}} </ion-label>
+    </ion-item-divider>
+    <ion-item *ngFor="let developer of developers">
+      <ion-icon name="person-outline" color="green"></ion-icon>
+      <ion-label class="label">&nbsp;{{ developer }}</ion-label>
+    </ion-item>
+  </ion-item-group>
+ 
+ </ion-list>
+ <br>
+ <ion-label class="ion-text-center">
+  <h2>{{version}}</h2>
+ </ion-label>
+
+</ion-content>

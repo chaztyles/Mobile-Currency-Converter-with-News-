@@ -1,4 +1,4 @@
-A sophisticated Currency Converter Mobile Application, meticulously designed to simplify and enhance financial experience.
+A smart Currency Converter Mobile Application, meticulously designed to simplify and enhance financial experience.
 
 
 Key Features:

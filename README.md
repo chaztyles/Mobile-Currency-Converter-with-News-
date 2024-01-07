@@ -32,7 +32,7 @@
 
 ## Mobile UI
 
-![Mobile UI](src/assets/mobile ui/ui.png)
+![Mobile UI](https://github.com/chaztyles/Mobile-Currency-Converter-with-News-/blob/a0d769644b940359323257cc9f3328465573b605/src/assets/mobile%20ui/ui%20screenshot.png)
 
 
 

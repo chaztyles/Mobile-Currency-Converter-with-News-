@@ -32,7 +32,7 @@
 
 ## Mobile UI
 
-![Mobile UI](src/assets/mobile ui/)
+![Mobile UI](src/assets/mobile ui/ui.png)
 
 
 

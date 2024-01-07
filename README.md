@@ -12,6 +12,8 @@
 - News
   - Stay informed with regularly updated news	
 
+- Dark Mode
+
 
 ## Services
 
@@ -30,5 +32,6 @@
 
 ## Mobile UI
 
-!(mobile ui)(src\assets\mobile ui\ui screenshot.png)
+![Mobile UI]("src/assets/mobile ui/ui screenshot.png")
+
 

@@ -1,4 +1,4 @@
-## Key Features:
+## Key Features
 
 - Rates Dashboard
   - Switch base currency
@@ -13,7 +13,7 @@
   - Stay informed with regularly updated news	
 
 
-## Services: 
+## Services
 
 - Local Storage 
 
@@ -22,13 +22,13 @@
   - News API: https://newsapi.org/
 
 
-## Frameworks:
+## Frameworks
 
 - Angular
 
 - Ionic
 
-## Mobile UI:
+## Mobile UI
 
 ![Mobile UI](src\assets\mobile ui\ui screenshot.png)
 

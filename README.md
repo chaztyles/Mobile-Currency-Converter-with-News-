@@ -1,30 +1,34 @@
-Key Features:
+## Key Features:
 
-• Rates Dashboard
+- Rates Dashboard
   - Switch base currency
   - Customize favorite currencies
   - View popular currencies
 
-• Conversion
+- Conversion
   - Convert currencies
   - Convenient reverse conversion option
 
-• News
+- News
   - Stay informed with regularly updated news	
 
 
-Services: 
+## Services: 
 
-• Local Storage 
+- Local Storage 
 
-• API Integration
+- API Integration
   - FASTforex: https://www.fastforex.io/
   - News API: https://newsapi.org/
 
 
-Frameworks:
+## Frameworks:
 
-• Angular
+- Angular
 
-• Ionic
+- Ionic
+
+## Mobile UI:
+
+![Mobile UI](src\assets\mobile ui\ui screenshot.png)
 
